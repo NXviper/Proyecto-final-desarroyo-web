@@ -31,8 +31,96 @@
         </ul>
       </nav>
 
+      <table border="2">
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Institucion</th>
+            <th>Lugar</th>
+            <th>¿Culmino?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2006</td>
+            <td>Escuela General Sanmartin</td>
+            <td>Tandil, Buenos Aires</td>
+            <td>Si</td>
+          </tr>
+          <tr>
+            <td>2009</td>
+            <td>Instituto de educacion superior Tandil</td>
+            <td>Tandil, Buenos Aires</td>
+            <td>Si</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>Universidad Nacional del Centro</td>
+            <td>Tandil, Buenos Aires</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
 
-    </header>
+    </br>
+
+      <form action="" autocomplete="on" name="Educacion adicional">
+
+        <fieldset>
+
+          <legend><b>Formulario de educacion</b></legend>
+
+          <h2>agregar educacion</h2>
+
+          <label for="year"><b>Año</b></label>
+              <select id="year" name="year" required>
+                    <script>
+
+                       var myDate = new Date();
+                       var year = myDate.getFullYear();
+                       for(var i = 1950; i < year+1; i++){
+                       document.write('<option value="'+i+'">'+i+'</option>');
+                          }
+                    </script>
+              </select>
+
+                <p>
+                </p>
+
+            <label for="institucion"><b>institucion</b></label>
+              <input type="text" name="institucion" min="3" maxlength="25" placeholder="Institucion" required></br>
+
+            <label for="place"><b>Lugar</b></label>
+            </br>
+              <textarea name="place" rows="8" cols="30" required></textarea>
+            </br>
+
+            <label for="finish"><b>Culmino?</b></label>
+
+
+                <input type="radio" name="finish" > Si
+                <input type="radio" name="finish" > No
+
+            <br>
+            <br>
+
+            <input type="submit" name="submit" value="enviar" >
+        </fieldset>
+
+      <footer>
+        </br>
+
+        <p>Derechos reservados NXviper.ltd 2017</p>
+
+          <h4>Contacto</h4>
+
+            <ul>
+              <li><b>Email: </b><a href="mailto:nachoxruiz.89@gmail.com?subjet=feedback">GMAIL</a></li>
+              <li><b>Telefono: </b>+54249154003926</li>
+              <li><b>Red Social: </b><a href="https://www.facebook.com/nacho.ruizmatias" target="_blank">FACEBOOK</a></li>
+            </ul>
+
+      </footer>
 
   </body>
 </html>
